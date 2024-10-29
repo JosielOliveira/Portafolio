@@ -1,4 +1,9 @@
-document.querySelector("form").addEventListener("submit", function(e) {
-    e.preventDefault(); // Evita que se recargue la página
-    alert("Gracias por contactarme, te responderé pronto.");
+// Animación de Scroll Suave
+document.querySelectorAll('.navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });

@@ -18,6 +18,10 @@ body {
     padding: 2em 1em;
 }
 
+a {
+    color: #00BFA5; /* Color deseado */
+}
+
 .profile-pic {
     width: 120px;
     height: 120px;
